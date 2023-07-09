@@ -1,4 +1,4 @@
-# Search Engine for Pretrained Neural Network Architecture
+# Search Engine for Embedding Database
 
 ## Code implementation of Neural Architectures Retrieval.
 
