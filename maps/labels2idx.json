@@ -1,0 +1,1 @@
+{"model_names": {"bert": 3, "opus": 2, "disti": 1, "unknown": 0}, "model_params": {"max_params": 127798368, "min_params": 6473875}, "model_size": {"max_size": 487.5120849609375, "min_size": 24.695873260498047}, "model_flops": {"max_flops": 30079202882, "min_flops": 10000000}, "task_names": {"object-detection": 1, "image-classification": 2, "image-segmentation": 3}}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+      <!-- Search Bar -->
+      <div class="search">
+        <h4>Neural Network Search Engine</h4>
+        <input id="search" type="text" placeholder="Type the task name or model name..." onkeypress="return searchKeyPress(event)"><br>
+        <a href="#" class="btn" onclick="Retrieval()">Retrieval Models</a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <a href="#" class="btn" onclick="Extract()">Extract Subgraphs</a>
+      </div>
+
+      <!-- Image Search -->
+      <label for="file-upload" class="upload-label">
+        <div class="upload-box">
+          <span class="upload-text">Uploaded Graphs of Model</span>
+          <img id="uploaded-image">
+        </div>
+      </label>
+      <input type="file" id="file-upload" accept="image/*" style="display: none;">
+
+      <div id="title"></div>
+
+      <div class="container">
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+        </div>
+      </div>
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
